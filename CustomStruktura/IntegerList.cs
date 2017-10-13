@@ -11,6 +11,10 @@ namespace CustomStruktura
     {
         private int[] _internalStorage;
 
+        private const int defaultSize = 4;
+
+
+
         public int Count => throw new NotImplementedException();
 
         public void Add(int item)
