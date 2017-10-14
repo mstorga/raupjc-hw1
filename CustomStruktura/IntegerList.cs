@@ -45,6 +45,8 @@ namespace CustomStruktura
 
         public void Clear()
         {
+            for (int i = 0; i < _currSize; i++)
+                _internalStorage[i] = 0;
             _currSize= 0;
         }
 
@@ -81,10 +83,10 @@ namespace CustomStruktura
         {
             if (!_internalStorage.Contains<int>(item))
             {
-                throw new Exception();
+                return false;
             }
             else if (Array.IndexOf(_internalStorage, item) >= _currSize)
-                throw new Exception();
+                return false;
             else
                 return RemoveAt(Array.IndexOf(_internalStorage, item));
         }
