@@ -10,7 +10,7 @@ namespace CustomStruktura
     {
         static void Main(string[] args)
         {
-            IGenericList<int> listOfIntegers = new GenericList<int>();
+            IIntegerList listOfIntegers = new IntegerList();
             listOfIntegers.Add(1); // [1]
             listOfIntegers.Add(2); // [1 ,2]
             listOfIntegers.Add(3); // [1 ,2 ,3]

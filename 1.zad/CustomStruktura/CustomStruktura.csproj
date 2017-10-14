@@ -42,8 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GenericList.cs" />
-    <Compile Include="IGenericList.cs" />
     <Compile Include="IntegerList.cs" />
     <Compile Include="IIntegerList.cs" />
     <Compile Include="Program.cs" />
